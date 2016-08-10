@@ -16,6 +16,14 @@ describe Account do
     end
   end
 
+  describe "#withdrawal" do
+    it "should decrease account balance" do
+      account.deposit(40)
+      account.withdrawal(20)
+      expect(account.balance). to eq 20
+    end
+  end
+
 
 
 end
