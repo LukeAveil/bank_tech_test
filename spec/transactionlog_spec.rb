@@ -1,6 +1,5 @@
 require 'transactionlog'
 
-
 describe TransactionLog do
 
   subject(:transactionlog) { described_class.new(transaction_class) }
