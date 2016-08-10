@@ -10,4 +10,12 @@ describe Account do
     end
   end
 
+  describe "#deposit" do
+    it "should increase account balance" do
+      expect(account.deposit(10)).to be == account.balance
+    end
+  end
+
+
+
 end
